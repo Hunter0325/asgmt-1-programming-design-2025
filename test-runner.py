@@ -57,7 +57,7 @@ class TestAssignmentOne(unittest.TestCase):
         self.assertTrue(asgmt.are_vowels_contained('anaconda'))
         self.assertTrue(asgmt.are_vowels_contained('reticulate'))
 
-asgmt = importlib.import_module("asgmt-one")
+asgmt = importlib.import_module("asgmt")
 suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentOne)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
